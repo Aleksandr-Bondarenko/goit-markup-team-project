@@ -1,6 +1,6 @@
 // --- Swiper Space Between
 
-let swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
   pagination: {
     el: '.swiper-pagination',

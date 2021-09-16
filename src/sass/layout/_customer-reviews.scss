@@ -1,58 +1,45 @@
-// -- Стили самого слайдера
-
-@font-face {
-  font-family: 'swiper-icons';
-  src: url('data:application/font-woff;charset=utf-8;base64, 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')
-    format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
+// Переопределение глобальных переменных в стилях swiper
 :root {
-  --swiper-theme-color: #007aff;
-}
-.swiper-container {
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-  list-style: none;
-  padding: 0;
-  z-index: 1;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-inactive-color: #d9d9d9;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-opacity: 1;
+  --swiper-pagination-bullet-horizontal-gap: 9px;
 }
 
-.swiper-container-vertical > .swiper-wrapper {
-  flex-direction: column;
-}
 .swiper-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  transition-property: transform;
-  box-sizing: content-box;
+  padding-bottom: 42px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 47px;
+  }
 }
 
-.swiper-slide {
-  flex-shrink: 0;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transition-property: transform;
+.swiper-pagination-bullet-active {
+  background: transparent;
+  background-image: url(/images/home.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: scale(1.5);
 }
 
+// -- Стили самого слайдера
 .reviews {
   padding-top: 80px;
-  padding-bottom: 43px;
   background-color: map-get($bgc, 'primary');
   @media screen and (min-width: 768px) {
     padding-top: 121px;
-    padding-bottom: 60px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 141px;
-    padding-bottom: 66px;
   }
+}
+
+#reviews
+  > div
+  > div
+  > div.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
 .reviews__title {
@@ -86,6 +73,7 @@
     @include font(16px, 30px, 0.04em, 500);
   }
 }
+
 .reviews__text-line {
   height: 100%;
   background-image: repeating-linear-gradient(
@@ -104,13 +92,13 @@
     );
   }
 }
+
 .reviews__container-text {
   margin-left: auto;
   margin-right: auto;
   background-color: rgba(250, 250, 250, 0.4);
-  // background-color: map-get($bgc, 'comment') 0.4;
-
   background-image: url(/images/desktop/element-54x34.png);
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -119,6 +107,7 @@
     background-image: url(/images/desktop/element-54x34@2x.png);
     background-size: 54px;
   }
+
   background-repeat: no-repeat;
   max-width: 280px;
   padding: 43px 61.5px 26px 61.5px;
@@ -131,38 +120,25 @@
     background-position-x: 41px;
     background-position-y: 30px;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 926px;
     padding: 45px 89px 49px 87px;
-
     background-position-x: 50px;
     background-position-y: 32px;
   }
 }
-// Точки как псевдоелемент на всякий случай
-// .reviews__container-text::after {
-//   content: '';
-//   display: block;
-//   width: 32px;
-//   height: 4px;
-
-//   margin-top: 56px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   background-image: url(/images/point-red.svg);
-//   @media screen and (min-width: 768px) {
-//     margin-top: 58px;
-//   }
-// }
 
 .reviews__icon-points {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+
   @media screen and (min-width: 768px) {
     margin-top: 24px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-top: 15px;
   }
@@ -171,19 +147,18 @@
 .reviews__name {
   display: block;
   margin-top: 18px;
-  margin-bottom: 30px;
   text-align: center;
   font-family: $primary-font;
   @include font(14px, 26px, 0em, 500);
   color: map-get($text, 'dark-txt');
+
   @media screen and (min-width: 768px) {
     @include font(16px, 30px, 0em, 500);
     margin-top: 14px;
-    margin-bottom: 35px;
   }
+
   @media screen and (min-width: 1280px) {
     @include font(20px, 37px, 0em, 500);
     margin-top: 15px;
-    margin-bottom: 35px;
   }
 }
