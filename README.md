@@ -1,5 +1,3 @@
-# my copy of team-lead repo
-
 # parcel-project-template
 
 ## Зависимости
